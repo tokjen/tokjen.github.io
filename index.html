@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Test Page: Don't Panic</title>
   <meta charset="utf-8">
@@ -7,24 +7,27 @@
     a {
       color: red;
     }
-    div {
-      border: 1px solid black;
+    #exec-bio {
+      background-color: lightgray;
     }
-    div a {
+    #exec-bio-orange {
+      background-color: orange;
+    }
+    .bio-box {
+      border: 1px solid black;
+  
+    .bio-box-azure {
+      background-color: azure;
+    }
+    .bio-box a {
       color: green;
-    }
-    li {
-      border: 1px solid black;
-    }
-    li a {
-      color: blue;
     }
   </style>
 </head>
 <body>
   <h1>I'm an h1</h1>
   <ul>
-    <li>
+    <li id="exec-bio-orange">
       <a href="http://example.com/">Link</a>
     </li>
     <li>
@@ -35,13 +38,13 @@
     </li>
   </ul>
   <h2>I'm an h2</h2>
-  <div>
+  <div id="exec-bio" class="bio-box">
     <a href="http://example.com/">I'm a link</a>
   </div>
-  <div>
+  <div class="bio-box">
     <a href="http://example.com/">I'm a link</a>
   </div>
-  <div>
+  <div class="bio-box bio-box-azure">
     <a href="http://example.com/">I'm a link</a>
   </div>
 </body>
